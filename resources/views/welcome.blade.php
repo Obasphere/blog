@@ -16,7 +16,7 @@
             <div class="col-md-8 my-5 offset-md-2">
                 @foreach($posts as $post)
                     <div class="card my-5">
-                        <img src="{{ asset($post->image) }}" style="max-height: 340px;" alt="" class="card-img-top">
+                        <img src="{{ asset('/storage/' . $post->image) }}" style="max-height: 340px;" alt="" class="card-img-top">
                         <div class="card-header">
                             {{ $post->title }}
                         </div>
